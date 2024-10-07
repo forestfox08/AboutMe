@@ -21,6 +21,10 @@ content {
     padding: 0;
 }
 
+nav{
+    font-size: 100%;
+}
+
 
 ul {
     list-style-type: none;
@@ -43,10 +47,11 @@ li a {
 }
 
 @font-face {
-    font-family:DSFONT;
-    src: local()
-}
+    font-family:dsfont;
+    src: url("fonts/Nintendo-DS-BIOS.ttf");
 
+}
 p {
-    font-family:DSFONT;
+    font-family:dsfont;
+    font-size:200%;
 }

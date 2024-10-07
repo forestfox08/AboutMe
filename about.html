@@ -3,35 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <title>J.J.</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <title>This is J.J.</title>
+    <script>
+        function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+    </script>
+    <style>
+
+    @font-face {
+    font-family:dsfont;
+    src: url("fonts/Nintendo-DS-BIOS.ttf");
+
+    }
+
+    p, h1, ol{
+        font-family:dsfont;
+        font-size:200%;
+        color:rgb(0, 0, 0);
+    }
+
+        .fotovanmij{
+           border-radius: 50%;
+           width: 100%;
+           height: 100%;
+    }
+        .hoofddorp{
+          width: 200px;
+          height: 200px;
+    }
+        body {
+        background-image:url("./images/yeah.gif");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:cover;
+        }
+
+        table{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(39,112,184);
+        background: linear-gradient(346deg, rgba(39,112,184,1) 0%, rgba(132,176,169,1) 100%);
+        padding: 40px;
+        }
+
+        .topnav{
+    background-color: rgb(39,112,184);
+    overflow: hidden;
+    font-family:dsfont;
+    }
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.Home {
+  background-color: rgba(132,176,169,1);
+  color: white;
+}
+
+.topnav button{
+    background-image:url("./images/yeah.gif");
+}
+
+.dark-mode {
+    background-image:url("./images/darkmode.gif");
+}
+
+.dark-mode p,h1 {
+    color: rgb(21, 44, 94);
+}
+  </style>
 </head>
 <body>
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog1.html">Blog Opdracht 1</a></li>
-            <li><a href="blog2.html">Blog Opdracht 2</a></li>
-        </ul>
-        </nav>
-        <br>
-        <br>
-        <br>
-        <h1>Music</h1>
-        <p>-press to play-</p>
-        <audio controls loop autoplay muted>
-            <source src="audio/backgroundmusic.mp3" type="audio/mpeg">
-        <br>
-        </audio>
-        <br>
-<table>
+    <div class="topnav">
+            <a class="Home" href="Index.html">Home</a> 
+            <a href="about.html">About me</a> 
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="blog1.html">Blog Opdracht 1</a> 
+            <a href="blog2.html">Blog Opdracht 2</a> 
+            <button onclick="myFunction()">Toggle dark mode</button>
+    </div>
+        <table>
         <div id="content">
-    <tr>
+        <tr>
         <th>
-            <p><img src="images/me.jpg" class="fotovanmij"></p>
+            <p><img src="./images/me.jpg" class="fotovanmij"></p>
                 </th>
                 </tr>
         <tr> 
@@ -47,13 +117,13 @@
                 </tr>
             <tr> 
             <th>
-            <h1> Woonplaats</h1>
+            <h1>Woonplaats</h1>
             <p>
                 Ik woon in Hoofddorp, er is niet veel te vertellen over de plek waar ik woon.
                 <br>
                 Hoofddorp is een rustig dorpje met een winkelcentrum.
             </p>
-            <p><img src="images/hoofddorp.jpg" class="hoofddorp"></p>
+            <p><img src="./images/Hoofddorp.jpg" class="hoofddorp"></p>
         </tr>
         </th>
         <tr>
@@ -81,37 +151,36 @@
         <tr>
         <th>  
         <h1>Mijn top 10 songs</h1>
-        <p>
-            <!--MOET GEFIXD WORDEN!!!, LIST WERKT NIET ALS EEN LIST GRR...-->
-            <ol type="1">
-                <li>1. boa - duvet</li>
+        <!--Music List-->
+            <ol class="musiclist">
+                <li>boa - duvet</li>
                 <br>
                 <br>
-                <li>2. Nujabes - luv (sic)</li>
+                <li>Nujabes - luv (sic)</li>
                 <br>
                 <br>
-                <li>3. Ennio Morricone - Interval I</li>
+                <li>Ennio Morricone - Intervallo I</li>
                 <br>
                 <br>
-                <li>4. SOUL SCREAM - Comatus</li>
+                <li>SOUL SCREAM - Comatus</li>
                 <br>
                 <br>
-                <li>5. The Beach Boys - Deirdre</li>
+                <li>The Beach Boys - Deirdre</li>
                 <br>
                 <br>
-                <li>6. Golemn - Untouchable</li>
+                <li>Golemn - Untouchable</li>
                 <br>
                 <br>
-                <li>7. Gang Starr - What I'm here 4</li>
+                <li>Gang Starr - What I'm here 4</li>
                 <br>
                 <br>
-                <li>8. Lyric Piece book 1, op. 12 Edvard Grieg</li>
+                <li>Lyric Piece book 1, op. 12 - Edvard Grieg</li>
                 <br>
                 <br>
-                <li>9. Soundgarden - Black Hole Sun</li>
+                <li>Soundgarden - Black Hole Sun</li>
                 <br>
                 <br>
-                <li>10. Nujabes - Letter from Yokosuka</li>
+                <li>Nujabes - Letter from Yokosuka</li>
             </ol>
         </p>
 </table>
